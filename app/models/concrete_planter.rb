@@ -1,0 +1,3 @@
+class ConcretePlanter < ApplicationRecord
+
+end

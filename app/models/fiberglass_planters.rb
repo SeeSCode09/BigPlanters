@@ -1,0 +1,3 @@
+class FiberglassPlanter < ApplicationRecord
+
+end
