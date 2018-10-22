@@ -11,31 +11,39 @@
 </head>
 <body>
 
-  <nav class="top-bar">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="/">Our Planters. Beautify Your Space</a></h1>
-      </li>
-    </ul>
-
-    <section class="top-bar-section">
-      <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Categories</a>
-        <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-          <li><a href="#">Concrete Planters</a></li>
-          <li><a href="#">Fiberglass Planters</a></li>
-          <li><a href="#">Plastic Planters</a></li>
-          <li><a href="#">Metal Planters</a></li>
-        </ul>
-      <ul class="right">
-        <%- if current_user -%>
-          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-        <%- else -%>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-          <li><%= link_to 'Sign In', new_user_session_path %></li>
-        <%- end -%>
+<!-- <div class="fixed"> -->
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">Our Planters. Beautify Your Space</a></h1>
+        </li>
       </ul>
-    </section>
-  </nav>
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="name">
+            <h1><a href="#">Call Us Today! 1-888-449-0542</a></h1>
+          </li>
+          <%- if current_user -%>
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <%- else -%>
+            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+            <li><%= link_to 'Sign In', new_user_session_path %></li>
+          <%- end -%>
+        </ul>
+      </section>
+    </nav>
+
+  <div class="small-12 colums">
+    <div class="header-row">
+      <a href="/">Home</a> |
+      <a href="#">Request A Quote</a> |
+      <a href="#">Service Areas</a> |
+      <a href="#">Contact Us</a> |
+      <a href="/about_us">About Us</a>
+    </div>
+  </div>
+<!-- </div> -->
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">

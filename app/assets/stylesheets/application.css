@@ -21,15 +21,24 @@
 
 .small-block-grid-4 {
   /* background-color: gray; */
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 800px;
   text-align: center;
+}
+
+.small-block-grid-4 img {
+  width: 200px;
+}
+
+.dawnlogo {
+  margin-top: 2%;
 }
 
 .cat_pic {
   margin: auto;
   width: 50%;
-
+  margin-top: 10px;
 }
 
 .cat_description {
@@ -37,8 +46,94 @@
   width: 75%;
 }
 
-.f-dropdown {
+.cat_products {
+  text-align: center;
+}
+
+.button {
+  background-color: #095EAB;
+  width: 150px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.header-row {
+  background-color: #4D8DC2;
+  height: 30px;
+  color: black;
+  text-align: center;
+}
+
+.header-row a {
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.hero-section-about-us {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* border-radius: 45px; */
+  background: url("https://www.godawn.com/wp-content/uploads/2016/02/About-Us-Big-Planters.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-home {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* border-radius: 45px; */
+  background: url("https://www.godawn.com/wp-content/uploads/2016/02/BigPlanters-Main-Pic.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-section-text {
   color: white;
+}
+
+.subfooter {
+  margin: 40px 0 20px 0;
+  padding-top: 0;
+  width: 100%;
+  height: 120px;
+  background-color: gray;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subfooter img {
+  align-items: center;
 }
 
 h1 {
