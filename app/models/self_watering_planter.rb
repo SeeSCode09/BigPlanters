@@ -1,0 +1,3 @@
+class SelfWateringPlanter < ApplicationRecord
+
+end

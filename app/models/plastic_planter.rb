@@ -1,0 +1,3 @@
+class PlasticPlanter < ApplicationRecord
+
+end
