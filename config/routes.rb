@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :about_us, only: [:index]
 
   resources :product_groups, only: [:index, :show]
-
+  resources :customers, only: [:index, :new, :show]
 
 
 end

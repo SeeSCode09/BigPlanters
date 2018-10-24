@@ -5,7 +5,7 @@ class CreateProductGroups < ActiveRecord::Migration[5.2]
       t.string :description, null: false
       t.string :image, null: false
 
-      t.timestamps null:false
+      t.timestamps null: false
     end
   end
 end
