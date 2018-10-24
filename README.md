@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Models
+ProductGroup
 
-Things you may want to cover:
+Product
+Color
 
-* Ruby version
+QuoteRequest
+Lead
+States
 
-* System dependencies
 
-* Configuration
+## Relationships
 
-* Database creation
+ProductGroup
+  --< Products
+    --< Color
 
-* Database initialization
+QuoteRequest
+ --< Products
+ --< Lead (prospective client)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Admin QuoteRequest Brainstorming
+- QuoteRequest index page
+-- A current_user (admin) can claim a QuoteRequest
+-- a "                  " can comment on a QuoteRequest
+-- each QuoteRequest has "status" column, that shows "UnClaimed", "Claimed" "Resolved"
 
-* Deployment instructions
-
-* ...
+#### Colors example:
+name
+palette-Image
+price_upcharge
+product_id
