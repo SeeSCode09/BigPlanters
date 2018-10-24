@@ -35,6 +35,10 @@
   margin-top: 2%;
 }
 
+.side_nav {
+  margin-top: 90px;
+}
+
 .cat_pic {
   margin-left: auto;
   margin-right: auto;
@@ -47,6 +51,19 @@
   width: 70%;
 }
 
+.contact_button {
+  margin-top: 20px;
+  margin-left: 45%;
+  margin-right: 40%;
+}
+
+.contact_form{
+  padding: 2%;
+  margin: auto;
+  width: 50%;
+  border: solid 1px black;
+}
+
 .map {
   margin: auto;
   width: 50%;
@@ -57,7 +74,7 @@
 }
 
 .cat-index {
-  padding-top: 25px;
+  margin-right: 12%;
 }
 
 .content-wrapper {

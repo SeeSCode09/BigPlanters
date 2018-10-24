@@ -1,0 +1,62 @@
+<div class="hero-section-about-us">
+  <div class="hero-section-text">
+  </div>
+</div>
+
+<div class="cat-index">
+  <h1> Contact Us Form </h1>
+</div>
+
+<div class="contact_form">
+    <%= form_for(@customer) do |f| %>
+
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.text_area :email %>
+      </div>
+
+      <div class="field">
+        <%= f.label :phone %><br />
+        <%= f.text_area :phone %>
+      </div>
+
+      <div class="field">
+        <%= f.label :company %><br />
+        <%= f.text_area :company %>
+      </div>
+
+      <div class="field">
+        <%= f.label :address %><br />
+        <%= f.text_area :address %>
+      </div>
+
+      <div class="field">
+        <%= f.label :city %><br />
+        <%= f.text_area :city %>
+      </div>
+
+      <div class="field">
+        <%= f.label :state %><br />
+        <%= f.text_area :state %>
+      </div>
+
+      <div class="field">
+        <%= f.label :zip %><br />
+        <%= f.text_area :zip %>
+      </div>
+
+      <div class="field">
+        <%= f.label :description %><br />
+        <%= f.text_area :description %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Submit Contact Us Form" %>
+      </div>
+      <% end %>
+</div>
