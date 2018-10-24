@@ -1,0 +1,36 @@
+<div class="row">
+      <div class="small-8 small-centered columns">
+          <div class="hero-section-home">
+            <div class="hero-section-text">
+            </div>
+          </div>
+
+          <p> BigPlanters.com is dedicated to providing the best possible planter solution for your plants and trees. Our product line includes a variety of outdoor planters including Planter Pots, Garden Planters, Concrete Planters, Plastic Planters, Metal Planters, Fiberglass Planters, Recycled Planters, Tree Tubs, and Self-Watering Planters. Our commitment is to make purchasing the right planter an informative and hassle-free experience.
+          <br/><br/>
+          BigPlanters.com designed this website in order to allow you the ability to easily search a large variety of planters and related products. It is of utmost importance to us that you, the customer, derive great confidence in value and receive unparalleled quality in service. </p>
+      </div>
+
+      <ul class="small-block-grid-4">
+        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/Concrete-Planters-Sub-Pic-sized-1.jpg" alt="Concrete Planters"></li>
+        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/Fiberglass-Planters-Sub-Pic-sized-1.jpg" alt="Fiberglass Planters"></li>
+        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/Plastic-Planters-Category-Pic-sized-1-560x826.jpg" alt="Plastic Planters"></li>
+        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/steel_planter-cat-pic-1.jpg" alt="Metal Planters"></li>
+      </ul>
+
+    <div class="cat_products">
+      <body>
+        <% @product_groups.each do |product_group| %>
+          <%= link_to product_group.name, product_group %> |
+        <% end %>
+      </body>
+    </div>
+
+</div>
+
+  <div class="subfooter">
+    <ul class="small-block-grid-3">
+      <li> <br/><br/>PART OF THE DAWN ENTERPRISES FAMILY </li>
+      <li><img class="dawnlogo" src="https://www.godawn.com/wp-content/uploads/2016/02/Dawn-Logo-Side-by-Side.png" alt="Concrete Planters" height="350" width="350"></li>
+      <li> <br/><br/>CLICK HERE TO LEARN MORE </li>
+    </ul>
+  </div>

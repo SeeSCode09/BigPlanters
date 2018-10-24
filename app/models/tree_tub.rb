@@ -1,3 +1,0 @@
-class TreeTub < ApplicationRecord
-
-end

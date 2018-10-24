@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<!-- <div class="fixed"> -->
+<div class="fixed">
     <nav class="top-bar">
       <ul class="title-area">
         <li class="name">
@@ -36,14 +36,26 @@
 
   <div class="small-12 colums">
     <div class="header-row">
-      <a href="/">Home</a> |
+      <a href="/product_groups">Home</a> |
       <a href="#">Request A Quote</a> |
       <a href="#">Service Areas</a> |
       <a href="#">Contact Us</a> |
       <a href="/about_us">About Us</a>
     </div>
   </div>
-<!-- </div> -->
+
+  <div class="side-nav">
+    <div class="small-2 columns">
+      <a class="button small expanded" href="/product_groups/1">Concrete</a>
+      <a class="button small expanded" href="/product_groups/2">Fiberglass</a>
+      <a class="button small expanded" href="/product_groups/3">Plastic</a>
+      <a class="button small expanded" href="/product_groups/4">Metal</a>
+      <a class="button small expanded" href="/product_groups/5">Self-Watering</a>
+      <a class="button small expanded" href="/product_groups/6">Tree Tubs</a>
+      <a class="button small expanded" href="#">New Products</a>
+    </div>
+  </div>
+</div>
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
@@ -51,7 +63,9 @@
     </div>
   <%- end -%>
 
+  <div class="content-wrapper">
   <%= yield %>
+  <div>
 
   <%= javascript_include_tag 'application' %>
 
