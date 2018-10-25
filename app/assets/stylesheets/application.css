@@ -42,7 +42,7 @@
 .cat_pic {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   margin-top: 10px;
 }
 
@@ -64,13 +64,19 @@
   border: solid 1px black;
 }
 
-.map {
-  margin: auto;
-  width: 50%;
-}
-
 .cat_products {
   text-align: center;
+  margin: auto;
+  width: 70%;
+}
+
+.show_products {
+  text-align: center;
+}
+
+.show_text {
+  margin-left: 23%;
+  width: 70%;
 }
 
 .cat-index {
