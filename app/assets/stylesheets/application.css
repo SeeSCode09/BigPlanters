@@ -31,12 +31,18 @@
   width: 200px;
 }
 
+.small-block-grid-3 img {
+  width: 250px;
+  height:250px;
+}
+
 .dawnlogo {
   margin-top: 2%;
 }
 
 .side_nav {
   margin-top: 90px;
+
 }
 
 .cat_pic {
