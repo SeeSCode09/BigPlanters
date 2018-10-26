@@ -1,6 +1,6 @@
-class CreateConcretePlanters < ActiveRecord::Migration[5.2]
+class CreateMetalPlanters < ActiveRecord::Migration[5.2]
   def change
-    create_table :concrete_planters do |t|
+    create_table :metal_planters do |t|
       t.string :product_name, null: false
       t.string :price, null: false
       t.string :description, null: false

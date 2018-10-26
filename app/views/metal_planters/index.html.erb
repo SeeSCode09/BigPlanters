@@ -1,0 +1,20 @@
+<div class="cat_description">
+  <div class="cat_pic">
+    <p><img src="https://www.godawn.com/wp-content/uploads/2016/02/Metal-Planter-Main-Pic.jpg" alt="Plastic Planters" width="700"></p>
+  </div>
+
+  <h1> Metal Planters </h1>
+
+  <p> Our metal planters combine design, strength, and durability making them an attractive and long-term solution to your planting needs. We offer many styles, shapes and sizes of metal planters and they are available in many color options to fit your specific design needs. </p>
+</div>
+
+<div class="cat_products">
+  <body>
+    <ul class="small-block-grid-3">
+      <% @metal_planters.each do |metal_planter| %>
+        <li><%= link_to metal_planter.product_name, metal_planter %>
+        <img src="<%= metal_planter.image %>"></li>
+        <% end %>
+    </div>
+  </body>
+</div>
