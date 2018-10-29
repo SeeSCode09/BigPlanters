@@ -1,0 +1,21 @@
+<h1> Edit Concrete Planters </h1>
+
+<div class="show_products">
+  <h1><%= @concrete_planter.product_name %></h1>
+
+  <p><img src="<%= @concrete_planter.image %>"><p>
+
+  <div class="show_text">
+    <p><strong> Model:</strong> <%= @concrete_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @concrete_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @concrete_planter.weight %></p>
+    <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
+    <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
+    <p> <%= @concrete_planter.description %> </p>
+  </div>
+
+  <span><%= link_to 'Delete', @concrete_planter, method: :delete %></span>
+
+  <%= render "form" %>
+
+</div>

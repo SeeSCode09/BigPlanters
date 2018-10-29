@@ -5,7 +5,7 @@ class CreateConcretePlanters < ActiveRecord::Migration[5.2]
       t.string :price, null: false
       t.string :description, null: false
       t.string :model, null: false
-      t.string :order, null: false
+      t.integer :order, null: false
       t.string :image, null: false
       t.string :dimensions
       t.string :weight

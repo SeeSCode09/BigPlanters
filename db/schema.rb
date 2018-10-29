@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_28_224742) do
+ActiveRecord::Schema.define(version: 2018_10_29_175253) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2018_10_28_224742) do
     t.string "price", null: false
     t.string "description", null: false
     t.string "model", null: false
-    t.string "order", null: false
+    t.integer "order", null: false
     t.string "image", null: false
     t.string "dimensions"
     t.string "weight"
@@ -97,6 +97,22 @@ ActiveRecord::Schema.define(version: 2018_10_28_224742) do
     t.string "name", null: false
     t.string "description", null: false
     t.string "image", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "self_watering_planters", force: :cascade do |t|
+    t.string "product_name", null: false
+    t.string "price", null: false
+    t.string "description", null: false
+    t.string "model", null: false
+    t.string "order", null: false
+    t.string "image", null: false
+    t.string "dimensions"
+    t.string "weight"
+    t.string "colors"
+    t.string "finishes"
+    t.string "size_options"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

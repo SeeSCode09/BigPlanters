@@ -1,0 +1,21 @@
+<h1> Edit Metal Planters </h1>
+
+<div class="show_products">
+  <h1><%= @metal_planter.product_name %></h1>
+
+  <p><img src="<%= @metal_planter.image %>"><p>
+
+  <div class="show_text">
+    <p><strong> Model:</strong> <%= @metal_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @metal_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @metal_planter.weight %></p>
+    <p><strong> Colors:</strong> <%= @metal_planter.colors %></p>
+    <p><strong> Finishes:</strong> <%= @metal_planter.finishes %></p>
+    <p> <%= @metal_planter.description %> </p>
+  </div>
+
+  <span><%= link_to 'Delete', @metal_planter, method: :delete %></span>
+
+  <%= render "form" %>
+
+</div>

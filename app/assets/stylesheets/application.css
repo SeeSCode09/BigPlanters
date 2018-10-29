@@ -19,6 +19,12 @@
   margin-top: 100px;
 }
 
+.number {
+  margin-top: 1px;
+  margin-left: 16px;
+  color: white;
+}
+
 .breadcrumbs {
   margin-right: 50px;
 }
@@ -27,6 +33,7 @@
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 10%;
   width: 60%;
 }
 
@@ -53,8 +60,9 @@
 .small-block-grid-3 img {
   width: 250px;
   height:250px;
+  border: solid 1px black;
+  border-radius: 10px;
 }
-
 
 .side_nav {
   margin-top: 100px;
@@ -63,7 +71,7 @@
 .cat_pic {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 50%;
   margin-top: 10px;
 }
 
@@ -100,6 +108,7 @@
   padding-right: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
+  border-radius: 5px;
 }
 
 /* .show_text {
@@ -126,66 +135,15 @@
   background-color: #4D8DC2;
   height: 30px;
   color: black;
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 32%;
 }
-
 
 .header-row a {
   color: black;
   padding-left: 10px;
   padding-right: 10px;
   font-weight: bold;
-}
-
-.hero-section-about-us {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
-  /* border-radius: 45px; */
-  background: url("https://www.godawn.com/wp-content/uploads/2016/02/About-Us-Big-Planters.jpg") 50% no-repeat;
-  background-size: cover;
-  height: 275px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero-section-home {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  /* border-radius: 45px; */
-  background: url("https://www.godawn.com/wp-content/uploads/2016/02/BigPlanters-Main-Pic.jpg") 50% no-repeat;
-  background-size: cover;
-  height: 275px;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero-section .hero-section-text {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
-}
-
-.hero-section-text {
-  color: white;
 }
 
 .subfooter {

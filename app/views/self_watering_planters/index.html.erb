@@ -1,0 +1,26 @@
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li class="disabled">Self Watering Planters</li>
+  </ul>
+</nav>
+
+<div class="cat_description">
+  <div class="hero-section-plastic">
+  </div>
+
+  <h1> Self Watering Planters </h1>
+
+  <p> Dawn Enterprises new “Aqueous” self watering planters looks terrific and are the perfect low-maintenance solution for any planting project indoors or outdoors. Save big $$$ on shipping costs without sacrificing that upscale, permanent appearance. This planter ships at a weight of 13 pounds, yet weighs 300 pounds after planting! Create an attractive perimeter to your property without worrying about a huge freight bill; or losing your new planter to inclement weather. Homeowners, property managers, architects, engineers, landscapers, restaurants, convenience stores, retailers, etc. will love the variety of colors offered. </p>
+</div>
+
+<div class="cat_products">
+  <body>
+    <ul class="small-block-grid-3">
+      <% @self_watering_planters.each do |self_watering_planter| %>
+        <li><%= link_to self_watering_planter.product_name, self_watering_planter %>
+        <img src="<%= self_watering_planter.image %>"></li>
+        <% end %>
+    </div>
+  </body>
+</div>

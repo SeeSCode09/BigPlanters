@@ -6,5 +6,7 @@ class FiberglassPlanter < ApplicationRecord
   validates :order, presence: true
   validates :image, presence: true
 
+  default_scope {order(order: :asc)}
+
 
 end

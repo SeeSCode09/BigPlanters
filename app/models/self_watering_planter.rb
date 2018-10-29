@@ -1,4 +1,4 @@
-class MetalPlanter < ApplicationRecord
+class SelfWateringPlanter < ApplicationRecord
 
   validates :product_name, presence: true
   validates :description, presence: true

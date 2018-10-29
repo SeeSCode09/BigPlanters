@@ -16,13 +16,13 @@
         <li class="name">
           <h1><a href="/">Our Planters. Beautify Your Space</a></h1>
         </li>
+        <li class="number">
+          Call Us Today! 1-888-449-0542
+        </li>
       </ul>
 
       <section class="top-bar-section">
         <ul class="right">
-          <li class="name">
-            <h1><a href="#">Call Us Today! 1-888-449-0542</a></h1>
-          </li>
           <%- if current_user -%>
             <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
           <%- else -%>
@@ -50,7 +50,7 @@
       <a class="button small expanded" href="/fiberglass_planters">Fiberglass</a>
       <a class="button small expanded" href="/plastic_planters">Plastic</a>
       <a class="button small expanded" href="/metal_planters">Metal</a>
-      <a class="button small expanded" href="/product_groups/5">Self-Watering</a>
+      <a class="button small expanded" href="/self_watering_planters">Self-Watering</a>
       <a class="button small expanded" href="/product_groups/6">Tree Tubs</a>
       <a class="button small expanded" href="#">New Products</a>
     </div>

@@ -1,0 +1,22 @@
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/self_watering_planters">Self Watering Planters</a></li>
+    <li class="disabled"><%= @self_watering_planter.product_name %></li>
+  </ul>
+</nav>
+
+<div class="show_products">
+  <h1><%= @self_watering_planter.product_name %></h1>
+
+  <p><img src="<%= @self_watering_planter.image %>"><p>
+
+  <div class="show_text">
+    <p><strong>Model:</strong><%= @self_watering_planter.model %>
+    </br><strong>Dimensions:</strong> (<%= @self_watering_planter.dimensions %>)
+  </br><strong>Weight:</strong> <%= @self_watering_planter.weight %></p>
+  <p><strong> Colors:</strong> <%= @self_watering_planter.colors %></p>
+  <p><strong> Finishes:</strong> <%= @self_watering_planter.finishes %></p>
+    <p> <%= @self_watering_planter.description %> </p>
+  </div>
+</div>
