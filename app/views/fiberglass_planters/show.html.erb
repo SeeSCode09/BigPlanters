@@ -1,12 +1,20 @@
-<h1><%= @fiberglass_planter.product_name %></h1>
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/fiberglass_planters">Fiberglass Planters</a></li>
+    <li class="disabled"><%= @fiberglass_planter.product_name %></li>
+  </ul>
+</nav>
 
 <div class="show_products">
+  <h1><%= @fiberglass_planter.product_name %></h1>
+
   <p><img src="<%= @fiberglass_planter.image %>"><p>
 
   <div class="show_text">
-    <p> Model: <%= @fiberglass_planter.model %>
-    </br> Dimensions: (<%= @fiberglass_planter.dimensions %>)
-  </br> Weight: <%= @fiberglass_planter.weight %></p>
+    <p><strong>Model:</strong> <%= @fiberglass_planter.model %>
+    </br><strong>Dimensions:</strong> (<%= @fiberglass_planter.dimensions %>)
+  </br><strong>Weight:</strong> <%= @fiberglass_planter.weight %></p>
     <p> <%= @fiberglass_planter.description %> </p>
   </div>
 </div>

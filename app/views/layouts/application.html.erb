@@ -9,7 +9,6 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body>
 
 <div class="fixed">
     <nav class="top-bar">
@@ -45,19 +44,19 @@
   </div>
 </div>
 
-
-<div class="side_nav">
-  <div class="small-2 columns">
-    <a class="button small expanded" href="/concrete_planters">Concrete</a>
-    <a class="button small expanded" href="/fiberglass_planters">Fiberglass</a>
-    <a class="button small expanded" href="/plastic_planters">Plastic</a>
-    <a class="button small expanded" href="/metal_planters">Metal</a>
-    <a class="button small expanded" href="/product_groups/5">Self-Watering</a>
-    <a class="button small expanded" href="/product_groups/6">Tree Tubs</a>
-    <a class="button small expanded" href="#">New Products</a>
+  <div class="side_nav">
+    <div class="small-2 columns">
+      <a class="button small expanded" href="/concrete_planters">Concrete</a>
+      <a class="button small expanded" href="/fiberglass_planters">Fiberglass</a>
+      <a class="button small expanded" href="/plastic_planters">Plastic</a>
+      <a class="button small expanded" href="/metal_planters">Metal</a>
+      <a class="button small expanded" href="/product_groups/5">Self-Watering</a>
+      <a class="button small expanded" href="/product_groups/6">Tree Tubs</a>
+      <a class="button small expanded" href="#">New Products</a>
+    </div>
   </div>
-</div>
 
+<body>
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">

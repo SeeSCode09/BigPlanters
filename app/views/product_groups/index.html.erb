@@ -1,5 +1,6 @@
 <div class="row">
-      <div class="small-8 small-centered columns">
+      <div class="large-9 small-centered columns">
+
           <div class="hero-section-home">
             <div class="hero-section-text">
             </div>
@@ -11,19 +12,11 @@
       </div>
 
       <ul class="small-block-grid-4">
-        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/Concrete-Planters-Sub-Pic-sized-1.jpg" alt="Concrete Planters"></li>
-        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/Fiberglass-Planters-Sub-Pic-sized-1.jpg" alt="Fiberglass Planters"></li>
-        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/Plastic-Planters-Category-Pic-sized-1-560x826.jpg" alt="Plastic Planters"></li>
-        <li><img src="https://www.godawn.com/wp-content/uploads/2016/02/steel_planter-cat-pic-1.jpg" alt="Metal Planters"></li>
+        <li><a href="/concrete_planters"><img src="https://www.godawn.com/wp-content/uploads/2016/02/Concrete-Planters-Sub-Pic-sized-1.jpg" alt="Concrete Planters"> <%= link_to 'Concrete Planters', concrete_planters_path %> </li>
+        <li><a href="/fiberglass_planters"><img src="https://www.godawn.com/wp-content/uploads/2016/02/Fiberglass-Planters-Sub-Pic-sized-1.jpg" alt="Fiberglass Planters"> <%= link_to 'Fiberglass Planters', fiberglass_planters_path %> </li>
+        <li><a href="/plastic_planters"><img src="https://www.godawn.com/wp-content/uploads/2016/02/Plastic-Planters-Category-Pic-sized-1-560x826.jpg" alt="Plastic Planters"> <%= link_to 'Plastic Planters', plastic_planters_path %> </li>
+        <li><a href="/metal_planters"><img src="https://www.godawn.com/wp-content/uploads/2016/02/steel_planter-cat-pic-1.jpg" alt="Metal Planters"> <%= link_to 'Metal Planters', metal_planters_path %> </li>
       </ul>
-
-    <div class="cat_products">
-      <body>
-        <% @product_groups.each do |product_group| %>
-          <%= link_to product_group.name, product_group %> |
-        <% end %>
-      </body>
-    </div>
 
 </div>
 

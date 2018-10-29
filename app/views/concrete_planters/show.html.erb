@@ -1,12 +1,23 @@
-<h1><%= @concrete_planter.product_name %></h1>
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/concrete_planters">Concrete Planters</a></li>
+    <li class="disabled"><%= @concrete_planter.product_name %></li>
+  </ul>
+</nav>
 
+</br>
 <div class="show_products">
+  <h1><%= @concrete_planter.product_name %></h1>
+
   <p><img src="<%= @concrete_planter.image %>"><p>
 
   <div class="show_text">
-    <p> Model: <%= @concrete_planter.model %>
-    </br> Dimensions: (<%= @concrete_planter.dimensions %>)
-    </br> Weight: <%= @concrete_planter.weight %></p>
+    <p><strong> Model:</strong> <%= @concrete_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @concrete_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @concrete_planter.weight %></p>
+    <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
+    <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
     <p> <%= @concrete_planter.description %> </p>
   </div>
 </div>

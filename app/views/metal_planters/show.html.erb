@@ -1,6 +1,14 @@
-<h1><%= @metal_planter.product_name %></h1>
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/metal_planters">Metal Planters</a></li>
+    <li class="disabled"><%= @metal_planter.product_name %></li>
+  </ul>
+</nav>
 
 <div class="show_products">
+  <h1><%= @metal_planter.product_name %></h1>
+
   <p><img src="<%= @metal_planter.image %>"><p>
 
   <div class="show_text">
