@@ -1,12 +1,20 @@
-<h1><%= @plastic_planter.product_name %></h1>
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/plastic_planters">Plastic Planters</a></li>
+    <li class="disabled"><%= @plastic_planter.product_name %></li>
+  </ul>
+</nav>
 
 <div class="show_products">
+  <h1><%= @plastic_planter.product_name %></h1>
+
   <p><img src="<%= @plastic_planter.image %>"><p>
 
   <div class="show_text">
-    <p> Model: <%= @plastic_planter.model %>
-    </br> Dimensions: (<%= @plastic_planter.dimensions %>)
-  </br> Weight: <%= @plastic_planter.weight %></p>
+    <p><strong>Model:</strong><%= @plastic_planter.model %>
+    </br><strong>Dimensions:</strong> (<%= @plastic_planter.dimensions %>)
+  </br><strong>Weight:</strong> <%= @plastic_planter.weight %></p>
     <p> <%= @plastic_planter.description %> </p>
   </div>
 </div>
