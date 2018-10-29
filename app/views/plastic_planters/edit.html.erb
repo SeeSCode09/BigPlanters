@@ -1,0 +1,21 @@
+<h1> Edit Plastic Planters </h1>
+
+<div class="show_products">
+  <h1><%= @plastic_planter.product_name %></h1>
+
+  <p><img src="<%= @plastic_planter.image %>"><p>
+
+  <div class="show_text">
+    <p><strong> Model:</strong> <%= @plastic_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @plastic_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @plastic_planter.weight %></p>
+    <p><strong> Colors:</strong> <%= @plastic_planter.colors %></p>
+    <p><strong> Finishes:</strong> <%= @plastic_planter.finishes %></p>
+    <p> <%= @plastic_planter.description %> </p>
+  </div>
+
+  <span><%= link_to 'Delete', @plastic_planter, method: :delete %></span>
+
+  <%= render "form" %>
+
+</div>

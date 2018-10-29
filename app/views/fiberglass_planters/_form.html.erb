@@ -1,0 +1,55 @@
+<%= form_for(@fiberglass_planter) do |f| %>
+  <div class="field">
+    <%= f.label :product_name %><br />
+    <%= f.text_field :product_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_area :price %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_area :model %>
+  </div>
+
+  <div class="field">
+    <%= f.label :order %><br />
+    <%= f.text_area :order %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.text_area :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dimensions %><br />
+    <%= f.text_area :dimensions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.text_area :weight %>
+  </div>
+
+  <div class="field">
+    <%= f.label :colors %><br />
+    <%= f.text_area :colors %>
+  </div>
+
+  <div class="field">
+    <%= f.label :finishes %><br />
+    <%= f.text_area :finishes %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Save Planter" %>
+  </div>
+  <% end %>

@@ -1,0 +1,134 @@
+.hero-section-home {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+  background: url("https://www.godawn.com/wp-content/uploads/2016/02/BigPlanters-Main-Pic.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-section-text {
+  color: white;
+}
+
+.hero-section-about-us {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 25px;
+  background: url("https://www.godawn.com/wp-content/uploads/2016/02/About-Us-Big-Planters.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-concrete {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 25px;
+  background: url("https://www.godawn.com/wp-content/uploads/2016/01/Hotchkiss-Showcase-960x420_c.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-fiberglass {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 25px;
+  background: url("https://www.godawn.com/wp-content/uploads/2016/02/Fiberglass-Planters-Header-Image-768x267.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-plastic {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 25px;
+  background: url("https://www.godawn.com/wp-content/uploads/2016/02/Plastic-Planter-Header-Image-768x267.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-metal {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 25px;
+  background: url("https://www.godawn.com/wp-content/uploads/2016/02/Metal-Planter-Main-Cat-Pic.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 275px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

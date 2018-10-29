@@ -1,0 +1,21 @@
+<h1> Edit Fiberglass Planters </h1>
+
+<div class="show_products">
+  <h1><%= @fiberglass_planter.product_name %></h1>
+
+  <p><img src="<%= @fiberglass_planter.image %>"><p>
+
+  <div class="show_text">
+    <p><strong> Model:</strong> <%= @fiberglass_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @fiberglass_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @fiberglass_planter.weight %></p>
+    <p><strong> Colors:</strong> <%= @fiberglass_planter.colors %></p>
+    <p><strong> Finishes:</strong> <%= @fiberglass_planter.finishes %></p>
+    <p> <%= @fiberglass_planter.description %> </p>
+  </div>
+
+  <span><%= link_to 'Delete', @fiberglass_planter, method: :delete %></span>
+
+  <%= render "form" %>
+
+</div>

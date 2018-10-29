@@ -4,10 +4,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   resources :about_us, only: [:index]
-  resources :concrete_planters, only: [:index, :show]
-  resources :fiberglass_planters, only: [:index, :show]
-  resources :plastic_planters, only: [:index, :show]
-  resources :metal_planters, only: [:index, :show]
+  resources :concrete_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
+  resources :fiberglass_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
+  resources :plastic_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
+  resources :metal_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
+  resources :self_watering_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
 
 
   resources :product_groups, only: [:index, :show]
