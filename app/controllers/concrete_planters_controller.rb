@@ -1,4 +1,6 @@
 class ConcretePlantersController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+
   def index
     @concrete_planters = ConcretePlanter.all
   end
@@ -55,6 +57,12 @@ end
   # Only allow a trusted parameter "white list" through.
   def new_concrete_planter_params
     params.require(:concrete_planter).permit(:product_name, :price, :description, :model, :order, :image, :dimensions, :weight, :colors, :finishes, :size_options)
+  end
+
+  def authorize_user
+    if !current_user.admin?
+      raise ActionController::RoutingError.new("Not Found")
+    end
   end
 
 end

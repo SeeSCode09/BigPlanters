@@ -21,7 +21,7 @@
         <ul class="small-block-grid-3">
           <% @concrete_planters.each do |concrete_planter| %>
             <li><%= link_to concrete_planter.product_name, concrete_planter %>
-            <img src="<%= concrete_planter.image %>"></li>
+            <p><a href=" <%= "/concrete_planters/#{concrete_planter.id}" %>"><img src="<%= concrete_planter.image %>"></a></p></li>
             <% end %>
     </div>
   </body>
