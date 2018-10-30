@@ -1,6 +1,7 @@
 class FiberglassPlantersController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  
+  before_action :authorize_user, except: [:index, :show]
+
   def index
     @fiberglass_planters = FiberglassPlanter.all
   end
@@ -56,7 +57,13 @@ end
 
   # Only allow a trusted parameter "white list" through.
   def new_fiberglass_planter_params
-    params.require(:fiberglass_planter).permit(:product_name, :price, :description, :model, :order, :image, :dimensions, :weight, :colors, :finishes, :size_options)
+    params.require(:fiberglass_planter).permit(:product_name, :price, :description, :model, :order, :image, :dimensions, :weight, :colors, :finishes, :size_options, :additional_info, :spec, :color_sheet)
+  end
+
+  def authorize_user
+    if !current_user || !current_user.admin?
+      raise ActionController::RoutingError.new("Not Found")
+    end
   end
 
 end

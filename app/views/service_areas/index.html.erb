@@ -1,0 +1,23 @@
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li class="disabled">Service Areas</li>
+  </ul>
+</nav>
+
+<div class="cat_description">
+  <h1> Service Areas </h1>
+
+  <p><img class="service_map" src="https://www.godawn.com/wp-content/uploads/2016/02/g_services_areamap.gif" align="center" ><p>
+  <h4> Click a state below to see notable projects and products offered in that state! </h4>
+</div>
+
+<div class="cat_products">
+  <body>
+    <ul class="small-block-grid-3">
+      <% @service_areas.each do |service_area| %>
+        <li> <%= link_to service_area.state, service_area %></li>
+        <% end %>
+    </ul>
+  </body>
+</div>

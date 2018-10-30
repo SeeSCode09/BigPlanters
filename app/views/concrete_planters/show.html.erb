@@ -9,8 +9,8 @@
 </br>
 <div class="show_products">
   <h1><%= @concrete_planter.product_name %></h1>
-
   <p><img src="<%= @concrete_planter.image %>"><p>
+  <h4> Prices starting at: <%= @concrete_planter.price %> </h4>
 
   <div class="show_text">
     <p><strong> Model:</strong> <%= @concrete_planter.model %>
@@ -19,8 +19,16 @@
     <p> <%= @concrete_planter.description %> </p>
   </div>
 </div>
+
 </br>
 <div class="show_products">
   <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
   <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
+</div>
+
+</br>
+<div class="show_products">
+  <h4> Additional Product Information: </h4>
+  <p><%= @concrete_planter.additional_info %></p>
+  <a href="<%= @concrete_planter.spec %>">View '<%= @concrete_planter.product_name %>' Spec Sheet</a>
 </div>
