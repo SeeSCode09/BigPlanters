@@ -1,6 +1,7 @@
 class SelfWateringPlantersController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  
+  before_action :authorize_user, except: [:index, :show]
+
   def index
     @self_watering_planters = SelfWateringPlanter.all
   end
@@ -56,7 +57,13 @@ end
 
   # Only allow a trusted parameter "white list" through.
   def new_self_watering_planter_params
-    params.require(:self_watering_planter).permit(:product_name, :price, :description, :model, :order, :image, :dimensions, :weight, :colors, :finishes, :size_options)
+    params.require(:self_watering_planter).permit(:product_name, :price, :description, :model, :order, :image, :dimensions, :weight, :colors, :finishes, :size_options, :additional_info, :spec, :color_sheet)
+  end
+
+  def authorize_user
+    if !current_user || !current_user.admin?
+      raise ActionController::RoutingError.new("Not Found")
+    end
   end
 
 end

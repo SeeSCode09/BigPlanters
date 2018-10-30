@@ -1,0 +1,14 @@
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/service_areas">Service Areas</a></li>
+    <li class="disabled"><%= @service_area.state %></li>
+  </ul>
+</nav>
+
+</br>
+<div class="show_products">
+  <h1>Planters in <%= @service_area.state %></h1>
+
+  <p> <%= @service_area.description %></p>
+</div>

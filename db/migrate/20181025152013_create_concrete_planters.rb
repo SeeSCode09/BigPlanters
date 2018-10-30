@@ -13,6 +13,8 @@ class CreateConcretePlanters < ActiveRecord::Migration[5.2]
       t.string :finishes
       t.string :size_options
       t.string :additional_info
+      t.string :spec
+      t.string :color_sheet
 
       t.timestamps null: false
     end

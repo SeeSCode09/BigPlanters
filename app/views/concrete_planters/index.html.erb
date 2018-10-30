@@ -16,12 +16,13 @@
   If you wish to learn more please feel free to contact our sales support or submit a submission form and we will be happy to assist you in finding the right planter for your project! </p>
 </div>
 
-    <div class="cat_products">
-      <body>
-        <ul class="small-block-grid-3">
-          <% @concrete_planters.each do |concrete_planter| %>
-            <li><%= link_to concrete_planter.product_name, concrete_planter %>
-            <p><a href=" <%= "/concrete_planters/#{concrete_planter.id}" %>"><img src="<%= concrete_planter.image %>"></a></p></li>
-            <% end %>
-    </div>
+<div class="cat_products">
+  <body>
+    <ul class="small-block-grid-3">
+      <% @concrete_planters.each do |concrete_planter| %>
+        <li><%= link_to concrete_planter.product_name, concrete_planter %>
+        <p><a href=" <%= "/concrete_planters/#{concrete_planter.id}" %>"><img src="<%= concrete_planter.image %>"></a></p></li>
+        <% end %>
+    </ul>
   </body>
+</div>

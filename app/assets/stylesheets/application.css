@@ -122,6 +122,7 @@
 
 .show_products {
   text-align: center;
+  /* background-image: linear-gradient(#D4D4D4, #FAFAFA); */
   background-color: lightgray;
   margin-left: 20%;
   margin-right: 10%;
@@ -167,6 +168,11 @@
   font-weight: bold;
 }
 
+.service_map {
+  width: 46%;
+  margin-left: 27%;
+}
+
 .subfooter {
   margin: 40px 0 20px 0;
   padding-top: 0;
@@ -184,5 +190,9 @@
 }
 
 h1 {
+  text-align: center;
+}
+
+h4 {
   text-align: center;
 }
