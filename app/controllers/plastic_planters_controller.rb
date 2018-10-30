@@ -1,4 +1,6 @@
 class PlasticPlantersController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  
   def index
     @plastic_planters = PlasticPlanter.all
   end

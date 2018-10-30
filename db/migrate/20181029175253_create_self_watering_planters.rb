@@ -12,7 +12,8 @@ class CreateSelfWateringPlanters < ActiveRecord::Migration[5.2]
         t.string :colors
         t.string :finishes
         t.string :size_options
-
+        t.string :additional_info
+        
         t.timestamps null: false
     end
   end

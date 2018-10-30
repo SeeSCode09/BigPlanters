@@ -1,4 +1,6 @@
 class MetalPlantersController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  
   def index
     @metal_planters = MetalPlanter.all
   end

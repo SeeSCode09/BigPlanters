@@ -1,4 +1,6 @@
 class FiberglassPlantersController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  
   def index
     @fiberglass_planters = FiberglassPlanter.all
   end

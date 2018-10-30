@@ -19,7 +19,7 @@
     <ul class="small-block-grid-3">
       <% @self_watering_planters.each do |self_watering_planter| %>
         <li><%= link_to self_watering_planter.product_name, self_watering_planter %>
-        <img src="<%= self_watering_planter.image %>"></li>
+          <p><a href=" <%= "/self_watering_planters/#{self_watering_planter.id}" %>"><img src="<%= self_watering_planter.image %>"></a></p></li>
         <% end %>
     </div>
   </body>
