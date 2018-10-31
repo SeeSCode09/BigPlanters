@@ -6,23 +6,27 @@
   </ul>
 </nav>
 
-</br>
-<div class="show_products">
-  <h1><%= @concrete_planter.product_name %></h1>
-  <p><img src="<%= @concrete_planter.image %>"><p>
-  <h4> Prices starting at: <%= @concrete_planter.price %> </h4>
+<div class="show_products_title">
+<h2><%= @concrete_planter.product_name %></h2>
+</div>
 
-  <div class="show_text">
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @concrete_planter.image %>" align="left">
+
+    <h5> Prices starting at: <%= @concrete_planter.price %> </h5>
     <p><strong> Model:</strong> <%= @concrete_planter.model %>
     </br><strong> Dimensions:</strong> (<%= @concrete_planter.dimensions %>)
-  </br><strong> Weight:</strong> <%= @concrete_planter.weight %></p>
-    <p> <%= @concrete_planter.description %> </p>
-  </div>
+    </br><strong> Weight:</strong> <%= @concrete_planter.weight %></p>
+
+
+    <p><strong>Product Description:</strong> </br> <%= @concrete_planter.description %> </p>
 </div>
 
 </br>
 <div class="show_products">
-  <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
+  <p><strong> Colors:</strong> <%= @concrete_planter.colors %> </br>
+  <%= link_to "View '#{@concrete_planter.product_name}' Color Options", @concrete_planter.color_sheet, target: '_blank' %></p>
   <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
 </div>
 
@@ -30,5 +34,5 @@
 <div class="show_products">
   <h4> Additional Product Information: </h4>
   <p><%= @concrete_planter.additional_info %></p>
-  <a href="<%= @concrete_planter.spec %>">View '<%= @concrete_planter.product_name %>' Spec Sheet</a>
+  <%= link_to "View '#{@concrete_planter.product_name}' Spec Sheet", @concrete_planter.spec, target: '_blank' %>
 </div>
