@@ -3,8 +3,12 @@
   </div>
 </div>
 
-<div class="cat-index">
+<div class="cat_description">
   <h1> Contact Us Form </h1>
+  <h5>Questions or comments? Need a custom order?</br>
+    Our sales representatives are available Monday through Friday from 8:00am-5pm EST.
+    Please fill out and submit the form below and someone will contact you within one business day. For a more immediate response, contact us directly at our toll free number:</br> 1-888-449-0542
+  </h5>
 </div>
 
 <div class="contact_form">
@@ -24,51 +28,53 @@
 
       <div class="field">
         <%= f.label :name %><br />
-        <%= f.text_field :name %>
+        <%= f.text_field :name, placeholder: "type your name here...(required)" %>
       </div>
 
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.text_area :email %>
+        <%= f.text_area :email, placeholder: "type your email here...(required)" %>
       </div>
 
       <div class="field">
         <%= f.label :phone %><br />
-        <%= f.text_area :phone %>
-      </div>
-
-      <div class="field">
-        <%= f.label :company %><br />
-        <%= f.text_area :company %>
-      </div>
-
-      <div class="field">
-        <%= f.label :address %><br />
-        <%= f.text_area :address %>
-      </div>
-
-      <div class="field">
-        <%= f.label :city %><br />
-        <%= f.text_area :city %>
-      </div>
-
-      <div class="field">
-        <%= f.label :state %><br />
-        <%= f.text_area :state %>
-      </div>
-
-      <div class="field">
-        <%= f.label :zip %><br />
-        <%= f.text_area :zip %>
+        <%= f.text_area :phone, placeholder: "type your phone number here...(required)" %>
       </div>
 
       <div class="field">
         <%= f.label :description %><br />
-        <%= f.text_area :description %>
+        <%= f.text_area :description, placeholder: "please use the text box below to provide information about your order..." %>
       </div>
+
+      <div class="field">
+        <%= f.label :company %><br />
+        <%= f.text_area :company, placeholder: "type your company here...(optional)" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :address %><br />
+        <%= f.text_area :address, placeholder: "type your address here...(optional)" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :city %><br />
+        <%= f.text_area :city, placeholder: "type your city here...(optional)" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :state %><br />
+        <%= f.text_area :state, placeholder: "type your state here...(optional)" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :zip %><br />
+        <%= f.text_area :zip, placeholder: "type your zip here...(optional)" %>
+      </div>
+
 
       <div class="actions">
         <%= f.submit "Submit Contact Us Form" %>
       </div>
       <% end %>
 </div>
+</br>

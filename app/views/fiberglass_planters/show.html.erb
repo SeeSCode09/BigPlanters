@@ -6,15 +6,33 @@
   </ul>
 </nav>
 
+<div class="show_products_title">
+<h2><%= @fiberglass_planter.product_name %></h2>
+</div>
+
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @fiberglass_planter.image %>" align="left">
+
+    <h5> Prices starting at: <%= @fiberglass_planter.price %> </h5>
+    <p><strong> Model:</strong> <%= @fiberglass_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @fiberglass_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @fiberglass_planter.weight %></p>
+
+
+    <p><strong>Product Description:</strong> </br> <%= @fiberglass_planter.description %> </p>
+</div>
+
+</br>
 <div class="show_products">
-  <h1><%= @fiberglass_planter.product_name %></h1>
+  <p><strong> Colors:</strong> <%= @fiberglass_planter.colors %> </br>
+  <%= link_to "View '#{@fiberglass_planter.product_name}' Color Options", @fiberglass_planter.color_sheet, target: '_blank' %></p>
+  <p><strong> Finishes:</strong> <%= @fiberglass_planter.finishes %></p>
+</div>
 
-  <p><img class="productimage" src="<%= @fiberglass_planter.image %>"><p>
-
-  <div class="show_text">
-    <p><strong>Model:</strong> <%= @fiberglass_planter.model %>
-    </br><strong>Dimensions:</strong> (<%= @fiberglass_planter.dimensions %>)
-  </br><strong>Weight:</strong> <%= @fiberglass_planter.weight %></p>
-    <p> <%= @fiberglass_planter.description %> </p>
-  </div>
+</br>
+<div class="show_products">
+  <h4> Additional Product Information: </h4>
+  <p><%= @fiberglass_planter.additional_info %></p>
+  <%= link_to "View '#{@fiberglass_planter.product_name}' Spec Sheet", @fiberglass_planter.spec, target: '_blank' %>
 </div>

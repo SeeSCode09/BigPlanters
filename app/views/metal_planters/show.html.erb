@@ -6,16 +6,33 @@
   </ul>
 </nav>
 
-<div class="show_products">
-  <h1><%= @metal_planter.product_name %></h1>
+<div class="show_products_title">
+<h2><%= @metal_planter.product_name %></h2>
+</div>
 
-  <p><img class="productimage" src="<%= @metal_planter.image %>"><p>
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @metal_planter.image %>" align="left">
 
-  <div class="show_text">
-    <p><strong>Model:</strong> <%= @metal_planter.model %>
-    </br><strong>Dimensions:</strong> (<%= @metal_planter.dimensions %>)
+    <h5> Prices starting at: <%= @metal_planter.price %> </h5>
+    <p><strong> Model:</strong> <%= @metal_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @metal_planter.dimensions %>)
   </br><strong> Weight:</strong> <%= @metal_planter.weight %></p>
-  <p><strong> Colors:</strong> <%= @metal_planter.colors %></p>
-    <p> <%= @metal_planter.description %> </p>
-  </div>
+
+
+    <p><strong>Product Description:</strong> </br> <%= @metal_planter.description %> </p>
+</div>
+
+</br>
+<div class="show_products">
+  <p><strong> Colors:</strong> <%= @metal_planter.colors %> </br>
+  <%= link_to "View '#{@metal_planter.product_name}' Color Options", @metal_planter.color_sheet, target: '_blank' %></p>
+  <p><strong> Finishes:</strong> <%= @metal_planter.finishes %></p>
+</div>
+
+</br>
+<div class="show_products">
+  <h4> Additional Product Information: </h4>
+  <p><%= @metal_planter.additional_info %></p>
+  <%= link_to "View '#{@metal_planter.product_name}' Spec Sheet", @metal_planter.spec, target: '_blank' %>
 </div>

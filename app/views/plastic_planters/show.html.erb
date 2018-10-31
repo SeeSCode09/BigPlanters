@@ -6,17 +6,33 @@
   </ul>
 </nav>
 
+<div class="show_products_title">
+<h2><%= @plastic_planter.product_name %></h2>
+</div>
+
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @plastic_planter.image %>" align="left">
+
+    <h5> Prices starting at: <%= @plastic_planter.price %> </h5>
+    <p><strong> Model:</strong> <%= @plastic_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @plastic_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @plastic_planter.weight %></p>
+
+
+    <p><strong>Product Description:</strong> </br> <%= @plastic_planter.description %> </p>
+</div>
+
+</br>
 <div class="show_products">
-  <h1><%= @plastic_planter.product_name %></h1>
-
-  <p><img class="productimage" src="<%= @plastic_planter.image %>"><p>
-
-  <div class="show_text">
-    <p><strong>Model:</strong><%= @plastic_planter.model %>
-    </br><strong>Dimensions:</strong> (<%= @plastic_planter.dimensions %>)
-  </br><strong>Weight:</strong> <%= @plastic_planter.weight %></p>
-  <p><strong> Colors:</strong> <%= @plastic_planter.colors %></p>
+  <p><strong> Colors:</strong> <%= @plastic_planter.colors %> </br>
+  <%= link_to "View '#{@plastic_planter.product_name}' Color Options", @plastic_planter.color_sheet, target: '_blank' %></p>
   <p><strong> Finishes:</strong> <%= @plastic_planter.finishes %></p>
-    <p> <%= @plastic_planter.description %> </p>
-  </div>
+</div>
+
+</br>
+<div class="show_products">
+  <h4> Additional Product Information: </h4>
+  <p><%= @plastic_planter.additional_info %></p>
+  <%= link_to "View '#{@plastic_planter.product_name}' Spec Sheet", @plastic_planter.spec, target: '_blank' %>
 </div>

@@ -1,0 +1,13 @@
+<h1> Edit Service Area </h1>
+
+  </br>
+  <div class="show_products">
+    <h1>Planters in <%= @service_area.state %></h1>
+
+    <p> <%= @service_area.description %></p>
+
+  <span><%= link_to 'Delete', @service_area, method: :delete %></span>
+
+  <%= render "form" %>
+
+</div>
