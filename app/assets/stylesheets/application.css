@@ -20,7 +20,7 @@
 }
 
 .large-9 {
-  width: 75%;
+  width: 80%;
 }
 
 .number {
@@ -30,7 +30,7 @@
 }
 
 .breadcrumbs {
-  margin-right: 50px;
+  margin-right: 120px;
 }
 
 .sign_up_form {
@@ -66,6 +66,14 @@
   width: 200px;
 }
 
+.small-block-grid-4 img:hover{
+   background-color: white;
+   opacity: 0.5;
+   -ms-transform: scale(1.2); /* IE 9 */
+     -webkit-transform: scale(1.2); /* Safari 3-8 */
+     transform: scale(1.2);
+ }
+
 .dawnlogo {
   margin-top: 2%;
 }
@@ -86,11 +94,16 @@
 .small-block-grid-3 img:hover{
    background-color: white;
    opacity: 0.5;
+   -ms-transform: scale(1.2); /* IE 9 */
+     -webkit-transform: scale(1.2); /* Safari 3-8 */
+     transform: scale(1.2);
  }
 
 .productimage{
   border-radius: 5px;
   margin-right: 15px;
+  width: 250px;
+  height: 250px;
 }
 
 .productimage:hover{
@@ -156,7 +169,6 @@
 }
 
 .show_products_main {
-  text-align: center;
   background-image: linear-gradient(#D4D4D4, #FAFAFA);
   /* background-color: lightgray; */
   margin-left: 20%;
@@ -170,7 +182,7 @@
 
 .show_products_title {
   text-align: center;
-  background-image: linear-gradient(#095EAB, #FAFAFA);
+  background-image: linear-gradient(#095EAB, #E9E9E9);
   /* background-color: lightgray; */
   margin-left: 20%;
   margin-right: 10%;
@@ -197,13 +209,16 @@
 
 .button {
   background-color: #095EAB;
-  width: 150px;
-  margin-top: 1px;
+  width: 60%;
+  margin-left: 11%;
+  margin-top: 2px;
   margin-bottom: 1px;
+  border-radius: 5px;
+  border: solid 1px lightgray;
 }
 
 .header-row {
-  background-color: #4D8DC2;
+  background-image: linear-gradient(#095EAB, #E9E9E9);
   height: 30px;
   color: black;
   /* text-align: center; */
@@ -245,6 +260,11 @@ h1 {
 h2 {
   text-align: center;
   font-family: Trebuchet MS;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
 }
 
 h5 {

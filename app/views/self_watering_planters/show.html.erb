@@ -6,17 +6,33 @@
   </ul>
 </nav>
 
+<div class="show_products_title">
+<h2><%= @self_watering_planter.product_name %></h2>
+</div>
+
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @self_watering_planter.image %>" align="left">
+
+    <h5> Prices starting at: <%= @self_watering_planter.price %> </h5>
+    <p><strong> Model:</strong> <%= @self_watering_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @self_watering_planter.dimensions %>)
+  </br><strong> Weight:</strong> <%= @self_watering_planter.weight %></p>
+
+
+    <p><strong>Product Description:</strong> </br> <%= @self_watering_planter.description %> </p>
+</div>
+
+</br>
 <div class="show_products">
-  <h1><%= @self_watering_planter.product_name %></h1>
-
-  <p><img class="productimage" src="<%= @self_watering_planter.image %>"><p>
-
-  <div class="show_text">
-    <p><strong>Model:</strong><%= @self_watering_planter.model %>
-    </br><strong>Dimensions:</strong> (<%= @self_watering_planter.dimensions %>)
-  </br><strong>Weight:</strong> <%= @self_watering_planter.weight %></p>
-  <p><strong> Colors:</strong> <%= @self_watering_planter.colors %></p>
+  <p><strong> Colors:</strong> <%= @self_watering_planter.colors %> </br>
+  <%= link_to "View '#{@self_watering_planter.product_name}' Color Options", @self_watering_planter.color_sheet, target: '_blank' %></p>
   <p><strong> Finishes:</strong> <%= @self_watering_planter.finishes %></p>
-    <p> <%= @self_watering_planter.description %> </p>
-  </div>
+</div>
+
+</br>
+<div class="show_products">
+  <h4> Additional Product Information: </h4>
+  <p><%= @self_watering_planter.additional_info %></p>
+  <%= link_to "View '#{@self_watering_planter.product_name}' Spec Sheet", @self_watering_planter.spec, target: '_blank' %>
 </div>

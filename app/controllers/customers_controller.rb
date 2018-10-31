@@ -15,10 +15,10 @@ class CustomersController < ApplicationController
     @customer = Customer.new
 
     if @customer.save
-      flash[:notice] = "Review added successfully."
+      flash[:notice] = "Form submitted successfully."
       redirect_to product_groups_path
     else
-      flash[:alert] = "Failed to save review."
+      flash[:alert] = "Failed to save form."
       render :new
     end
 end
