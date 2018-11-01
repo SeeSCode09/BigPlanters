@@ -8,6 +8,8 @@
 
 <div class="show_products_title">
 <h2><%= @concrete_planter.product_name %></h2>
+<!-- <a href="/concrete_planters/ <%= @concrete_planter.id %>" class="previous">&laquo; Previous Planter</a>
+<a href="#" class="next">Next Planter &raquo;</a> -->
 </div>
 
 <div class="show_products_main">
@@ -25,9 +27,9 @@
 
 </br>
 <div class="show_products">
-  <p><strong> Colors:</strong> <%= @concrete_planter.colors %> </br>
-  <%= link_to "View '#{@concrete_planter.product_name}' Color Options", @concrete_planter.color_sheet, target: '_blank' %></p>
+  <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
   <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
+  <%= link_to "View '#{@concrete_planter.product_name}' Color/Finish Options", @concrete_planter.color_sheet, target: '_blank' %>
 </div>
 
 </br>

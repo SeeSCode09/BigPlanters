@@ -94,9 +94,9 @@
 .small-block-grid-3 img:hover{
    background-color: white;
    opacity: 0.5;
-   -ms-transform: scale(1.2); /* IE 9 */
-     -webkit-transform: scale(1.2); /* Safari 3-8 */
-     transform: scale(1.2);
+   /* -ms-transform: scale(1.2); /* IE 9 */
+     /* -webkit-transform: scale(1.2); /* Safari 3-8 */ */
+     /* transform: scale(1.2); */ */
  }
 
 .productimage{
@@ -194,6 +194,21 @@
   border-radius: 5px;
 }
 
+.previous {
+    background-color: #095EAB;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    margin-right: 50%;
+}
+
+.next {
+  background-color: #095EAB;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
 /* .show_text {
   margin-left: 23%;
   width: 70%;
@@ -215,6 +230,13 @@
   margin-bottom: 1px;
   border-radius: 5px;
   border: solid 1px lightgray;
+}
+
+.button_footer{
+  background-color: #095EAB;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  color: white;
 }
 
 .header-row {
@@ -251,6 +273,21 @@
   align-items: center;
   height: 100px;
 
+}
+
+.footer {
+  display: block;
+  background-image: linear-gradient(#095EAB, white);
+  height: 100px;
+  margin-top: 5%;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
 }
 
 h1 {

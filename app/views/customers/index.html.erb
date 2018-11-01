@@ -1,0 +1,11 @@
+<h1> Customer Information </h1>
+
+<ul>
+  <% @customers.each do |customer| %>
+    <li> <%= customer.name %> | <%= customer.email %> | <%= customer.phone %></li>
+
+    <span><%= link_to 'Delete', customer, method: :delete %></span>
+
+  <% end %>
+
+</ul>
