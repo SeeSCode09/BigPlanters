@@ -14,10 +14,7 @@
     <nav class="top-bar">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="/">Our Planters. Beautify Your Space</a></h1>
-        </li>
-        <li class="number">
-          Call Us Today! 1-888-449-0542
+          <h1><a href="/">Our Planters. Beautify Your Space - Call Us Today! 1-888-449-0542</a></h1>
         </li>
       </ul>
 
@@ -82,6 +79,9 @@
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
 
-  <%= yield :extra_footer %>
 </body>
+  <div class="footer">
+    <%= yield :extra_footer %>
+    <%= render "layouts/footer" %>
+  </div>
 </html>

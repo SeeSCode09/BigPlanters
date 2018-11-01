@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
 
   resources :product_groups, only: [:index, :show]
-  resources :customers, only: [:index, :new, :show, :create]
+  resources :customers, only: [:index, :new, :show, :create, :update, :destroy, :edit]
   resources :service_areas, only: [:index, :new, :show, :create, :update, :destroy, :edit]
 
 

@@ -25,9 +25,9 @@
 
 </br>
 <div class="show_products">
-  <p><strong> Colors:</strong> <%= @metal_planter.colors %> </br>
-  <%= link_to "View '#{@metal_planter.product_name}' Color Options", @metal_planter.color_sheet, target: '_blank' %></p>
+  <p><strong> Colors:</strong> <%= @metal_planter.colors %> </p>
   <p><strong> Finishes:</strong> <%= @metal_planter.finishes %></p>
+  <%= link_to "View '#{@metal_planter.product_name}' Color/Finish Options", @metal_planter.color_sheet, target: '_blank' %>
 </div>
 
 </br>
