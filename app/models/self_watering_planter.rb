@@ -8,5 +8,17 @@ class SelfWateringPlanter < ApplicationRecord
 
   default_scope {order(order: :asc)}
 
+  scope :next, lambda {|id| where("id > ?",id).order("id ASC") } # this is the default ordering for AR
+    scope :previous, lambda {|id| where("id < ?",id).order("id DESC") }
+
+    def next
+      SelfWateringPlanter.next(self.id).first
+    end
+
+    def previous
+      SelfWateringPlanter.previous(self.id).last
+    end
+
+
 
 end

@@ -8,5 +8,17 @@ class PlasticPlanter < ApplicationRecord
 
   default_scope {order(order: :asc)}
 
+  scope :next, lambda {|id| where("id > ?",id).order("id ASC") } # this is the default ordering for AR
+    scope :previous, lambda {|id| where("id < ?",id).order("id DESC") }
+
+    def next
+      PlasticPlanter.next(self.id).first
+    end
+
+    def previous
+      PlasticPlanter.previous(self.id).last
+    end
+
+
 
 end
