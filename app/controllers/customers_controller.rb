@@ -1,6 +1,6 @@
 class CustomersController < ApplicationController
-  before_action :authenticate_user!, except: [:new]
-  before_action :authorize_user, except: [:new]
+  before_action :authenticate_user!, except: [:new, :create, :update]
+  before_action :authorize_user, except: [:new, :create, :update]
 
   def index
     @customers = Customer.all
