@@ -94,9 +94,6 @@
 .small-block-grid-3 img:hover{
    background-color: white;
    opacity: 0.5;
-   /* -ms-transform: scale(1.2); /* IE 9 */
-     /* -webkit-transform: scale(1.2); /* Safari 3-8 */ */
-     /* transform: scale(1.2); */ */
  }
 
  .small-2 {
@@ -205,7 +202,7 @@
   padding-right: 5%;
   padding-top: .5%;
   padding-bottom: 2%;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   border: solid 1px black;
 }
 
@@ -260,12 +257,12 @@
   border: solid 1px lightgray;
 }
 
-.button_footer{
+/* .button_footer{
   background-color: #095EAB;
   border-radius: 5px;
   padding: 5px 5px 5px 5px;
   color: white;
-}
+} */
 
 .header-row {
   background-image: linear-gradient(#095EAB, #E9E9E9);
