@@ -86,7 +86,7 @@
 
 .small-block-grid-3 img {
   width: 250px;
-  height:250px;
+  height: 250px;
   border: solid 1px black;
   border-radius: 10px;
 }
@@ -113,6 +113,7 @@
   margin-right: 15px;
   width: 250px;
   height: 250px;
+  border: solid 1px black;
 }
 
 .productimage:hover{
@@ -142,6 +143,7 @@
 
 .cat_description {
   margin: auto;
+  margin-left: 20%;
   width: 70%;
 }
 
@@ -154,6 +156,8 @@
 .contact_form{
   padding: 2%;
   margin: auto;
+  margin-left: 30%;
+  margin-bottom: 15%;
   width: 50%;
   border: solid 1px black;
 }
@@ -162,6 +166,7 @@
   text-align: center;
   margin: auto;
   width: 70%;
+  margin-left: 20%;
 }
 
 .show_products {
@@ -191,8 +196,8 @@
 
 .show_products_title {
   text-align: center;
-  background-image: linear-gradient(#095EAB, #E9E9E9);
-  /* background-color: lightgray; */
+  /* background-image: linear-gradient(#095EAB, #E9E9E9); */
+  background-color: #095EAB;
   margin-left: 20%;
   margin-right: 10%;
   margin-bottom: 10px;
@@ -201,6 +206,7 @@
   padding-top: .5%;
   padding-bottom: 2%;
   border-radius: 5px;
+  border: solid 1px black;
 }
 
 .previous {
@@ -209,9 +215,9 @@
 }
 
 .previous a {
-  color: black;
+  color: white;
   font-size: 15pt;
-  font-family: Trebuchet MS;
+  font-family: Arial;
 }
 
 .next {
@@ -219,16 +225,16 @@
 }
 
 .next a {
-  color: black;
+  color: white;
   font-size: 15pt;
-  font-family: Trebuchet MS;
+  font-family: Arial;
 }
 
 .categorylink a {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 15pt;
-  font-family: Trebuchet MS;
+  font-family: Arial;
 }
 
 /* .show_text {
@@ -282,7 +288,7 @@
 }
 
 .subfooter {
-  margin: 40px 0 20px 0;
+  margin: 40px 0 120px 0;
   padding-top: 0;
   width: 100%;
   height: 120px;
@@ -299,9 +305,21 @@
 
 .footer {
   display: block;
-  background-image: linear-gradient(#095EAB, white);
-  height: 100px;
+  position: fixed;
+  bottom: 0;
+  /* background-image: linear-gradient(#095EAB, white); */
+  background-color: #095EAB;
+  width: 100%;
+  height: 110px;
   margin-top: 5%;
+}
+
+.footer p{
+  color: white;
+}
+
+.footer_link {
+  color: white;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -316,10 +334,18 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.show_products_title h2 {
   text-align: center;
-  font-family: Trebuchet MS;
+  font-family: Arial;
   font-weight: bold;
+  color: #FAFAFA;
+}
+
+.footer h2 {
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+  color: #FAFAFA;
 }
 
 h4 {
@@ -329,4 +355,8 @@ h4 {
 h5 {
   text-align: center;
   font-weight: bold;
+}
+
+.footer h6 {
+  color: white;
 }
