@@ -15,12 +15,10 @@
 </div>
 
 <div class="cat_products">
-  <body>
-    <ul class="small-block-grid-3">
+
       <% @fiberglass_planters.each do |fiberglass_planter| %>
-        <li><%= link_to fiberglass_planter.product_name, fiberglass_planter %>
-        <p><a href=" <%= "/fiberglass_planters/#{fiberglass_planter.id}" %>"><img src="<%= fiberglass_planter.image %>" alt=" <%= fiberglass_planter.product_name %>"></a></p></li>
+        <div class="medium-12 large-4 columns"><%= link_to fiberglass_planter.product_name, fiberglass_planter %>
+        <p><a href=" <%= "/fiberglass_planters/#{fiberglass_planter.id}" %>"><img class="image-tile" src="<%= fiberglass_planter.image %>" alt=" <%= fiberglass_planter.product_name %>"></a></p></div>
         <% end %>
-    </ul>
-  </body>
+
 </div>

@@ -15,12 +15,10 @@
 </div>
 
 <div class="cat_products">
-  <body>
-    <ul class="small-block-grid-3">
+
       <% @metal_planters.each do |metal_planter| %>
-        <li><%= link_to metal_planter.product_name, metal_planter %>
-          <p><a href=" <%= "/metal_planters/#{metal_planter.id}" %>"><img src="<%= metal_planter.image %>" alt=" <%= metal_planter.product_name %>"></a></p></li>
+        <div class="medium-12 large-4 columns"><%= link_to metal_planter.product_name, metal_planter %>
+          <p><a href=" <%= "/metal_planters/#{metal_planter.id}" %>"><img class="image-tile" src="<%= metal_planter.image %>" alt=" <%= metal_planter.product_name %>"></a></p></div>
         <% end %>
-    </div>
-  </body>
+
 </div>
