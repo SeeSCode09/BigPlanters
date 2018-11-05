@@ -19,7 +19,7 @@
     <ul class="small-block-grid-3">
       <% @metal_planters.each do |metal_planter| %>
         <li><%= link_to metal_planter.product_name, metal_planter %>
-          <p><a href=" <%= "/metal_planters/#{metal_planter.id}" %>"><img src="<%= metal_planter.image %>"></a></p></li>
+          <p><a href=" <%= "/metal_planters/#{metal_planter.id}" %>"><img src="<%= metal_planter.image %>" alt=" <%= metal_planter.product_name %>"></a></p></li>
         <% end %>
     </div>
   </body>
