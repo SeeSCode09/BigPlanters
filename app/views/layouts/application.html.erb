@@ -70,9 +70,11 @@
         </div>
       <%- end -%>
 
+      
       <div class="content-wrapper">
       <%= yield %>
       <div>
+
 
       <%= javascript_include_tag 'application' %>
 
@@ -82,6 +84,7 @@
         <%- end -%>
       <%- end -%>
       <%= javascript_pack_tag 'application' %>
+    </body>
 
       <div class="hide-for-medium-down">
         <div class="footer">
@@ -89,5 +92,4 @@
           <%= render "layouts/footer" %>
         </div>
       </div>
-  </body>
 </html>

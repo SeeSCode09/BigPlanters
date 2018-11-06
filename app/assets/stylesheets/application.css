@@ -15,6 +15,7 @@
  *= require foundation_and_overrides
 
  */
+
 .row {
   margin-top: 100px;
 }
@@ -177,6 +178,7 @@
   /* margin: auto; */
   width: 70%;
   margin-left: 20%;
+  padding-bottom: 800px;
 }
 
 .show_products {
@@ -219,6 +221,20 @@
   border: solid 1px black;
 }
 
+.show_products_bottom {
+  text-align: center;
+  /* background-image: linear-gradient(#D4D4D4, #FAFAFA); */
+  background-color: #E9E9E9;
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  border-radius: 5px;
+}
+
 .edit_form {
   padding-bottom: 15%;
 }
@@ -254,6 +270,7 @@
 .cat-index {
   margin-right: 12%;
 }
+
 
 .content-wrapper {
   margin-top: 55px;
