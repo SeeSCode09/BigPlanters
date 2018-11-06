@@ -33,7 +33,7 @@ class PlasticPlantersController < ApplicationController
   def update
    @plastic_planter = PlasticPlanter.find(params[:id])
 
-   if @plastic_planter.update(new_concrete_planter_params)
+   if @plastic_planter.update(new_plastic_planter_params)
      flash[:notice] = "Planter updated!"
      redirect_to plastic_planter_path(@plastic_planter)
    else
