@@ -12,13 +12,14 @@
   <body>
 
     <div class="fixed">
-        <nav class="top-bar">
+      <nav class="top-bar">
           <ul class="title-area">
             <li class="name">
               <h1><a href="/">Our Planters. Beautify Your Space - Call Us Today! 1-888-449-0542</a></h1>
             </li>
           </ul>
 
+        <div class="hide-for-medium-down">
           <section class="top-bar-section">
             <ul class="right">
               <% if user_signed_in? %>
@@ -34,19 +35,21 @@
               <%- end -%>
             </ul>
           </section>
-        </nav>
+        </div>
+      </nav>
 
+        <div style="overflow: hidden;">
         <div class="header-row">
           <a href="/product_groups">Home</a> |
-          <a href="#">Request A Quote</a> |
           <a href="/service_areas">Service Areas</a> |
           <a href="/customers/new">Contact Us</a> |
           <a href="/about_us">About Us</a>
         </div>
+      </div>
 
     </div>
 
-      <div class="hide-for-small-only">
+      <div class="hide-for-medium-down">
         <div class="side_nav">
           <div class="small-2 columns">
             <a class="button small expanded" href="/concrete_planters">Concrete</a>
@@ -80,9 +83,11 @@
       <%- end -%>
       <%= javascript_pack_tag 'application' %>
 
-      <div class="footer">
-        <%= yield :extra_footer %>
-        <%= render "layouts/footer" %>
+      <div class="hide-for-medium-down">
+        <div class="footer">
+          <%= yield :extra_footer %>
+          <%= render "layouts/footer" %>
+        </div>
       </div>
   </body>
 </html>

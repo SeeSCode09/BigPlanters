@@ -9,17 +9,19 @@
 <div class="show_products_title">
 <h2><%= @metal_planter.product_name %></h2>
 
-  <span class="previous">
-    <%= link_to("< Previous Planter", @metal_planter.previous) %>
-  </span>
+  <div class="hide-for-medium-down">
+    <span class="previous">
+      <%= link_to("< Previous Planter", @metal_planter.previous) %>
+    </span>
 
-  <span class="categorylink">
-    <%= link_to("All Metal Planters", metal_planters_path)%>
-  </span>
+    <span class="categorylink">
+      <%= link_to("All Metal Planters", metal_planters_path)%>
+    </span>
 
-  <span class="next">
-    <%= link_to("Next Planter >", @metal_planter.next) %>
-  </span>
+    <span class="next">
+      <%= link_to("Next Planter >", @metal_planter.next) %>
+    </span>
+  </div>
 
 </div>
 
