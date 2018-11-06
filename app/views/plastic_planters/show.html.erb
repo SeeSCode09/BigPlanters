@@ -7,19 +7,21 @@
 </nav>
 
 <div class="show_products_title">
-<h2><%= @plastic_planter.product_name %></h2>
+  <h2><%= @plastic_planter.product_name %></h2>
 
-  <span class="previous">
-    <%= link_to("< Previous Planter", @plastic_planter.previous) %>
-  </span>
+  <div class="hide-for-medium-down">
+    <span class="previous">
+      <%= link_to("< Previous Planter", @plastic_planter.previous) %>
+    </span>
 
-  <span class="categorylink">
-    <%= link_to("All Plastic Planters", plastic_planters_path)%>
-  </span>
+    <span class="categorylink">
+      <%= link_to("All Plastic Planters", plastic_planters_path)%>
+    </span>
 
-  <span class="next">
-    <%= link_to("Next Planter >", @plastic_planter.next) %>
-  </span>
+    <span class="next">
+      <%= link_to("Next Planter >", @plastic_planter.next) %>
+    </span>
+  </div>
 </div>
 
 <div class="show_products_main">

@@ -9,6 +9,7 @@
 <div class="show_products_title">
 <h2><%= @concrete_planter.product_name %></h2>
 
+  <div class="hide-for-medium-down">
     <span class="previous">
       <%= link_to("< Previous Planter", @concrete_planter.previous) %>
     </span>
@@ -20,6 +21,7 @@
     <span class="next">
       <%= link_to("Next Planter >", @concrete_planter.next) %>
     </span>
+  </div>
 
 </div>
 
