@@ -1,13 +1,8 @@
 import React from 'react'
 
-export const App = (props) => {
-
-
-
+const App = (props) => {
   return (
-
     <h1>React Product Page</h1>
-
   )
 }
 
