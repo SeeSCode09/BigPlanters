@@ -356,6 +356,7 @@
 
 .column:hover {
   background-color: #4786BD;
+  border: 1px solid white;
 }
 
 h1 {
