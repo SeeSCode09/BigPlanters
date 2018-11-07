@@ -1,12 +1,12 @@
 .hero-section-home {
   margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   margin-right: 10px;
   border-radius: 25px;
   background: url("https://www.godawn.com/wp-content/uploads/2016/02/BigPlanters-Main-Pic.jpg") 50% no-repeat;
   background-size: cover;
-  height: 275px;
+  height: 350px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
