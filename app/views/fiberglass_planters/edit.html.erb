@@ -1,23 +1,54 @@
 <h1> Edit Fiberglass Planters </h1>
 
-<div class="show_products">
-  <h1><%= @fiberglass_planter.product_name %></h1>
+<div class="show_products_title">
+<h2><%= @fiberglass_planter.product_name %></h2>
 
-  <p><img src="<%= @fiberglass_planter.image %>"><p>
+  <div class="hide-for-medium-down">
+    <span class="previous">
+      <%= link_to("< Previous Planter", @fiberglass_planter.previous) %>
+    </span>
 
-  <div class="show_text">
+    <span class="categorylink">
+      <%= link_to("All Fiberglass Planters", fiberglass_planters_path)%>
+    </span>
+
+    <span class="next">
+      <%= link_to("Next Planter >", @fiberglass_planter.next) %>
+    </span>
+  </div>
+
+</div>
+
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @fiberglass_planter.image %>" align="left" alt="<%= @fiberglass_planter.product_name %>">
+
+    <h5> Prices starting at: <%= @fiberglass_planter.price %> </h5>
     <p><strong> Model:</strong> <%= @fiberglass_planter.model %>
     </br><strong> Dimensions:</strong> (<%= @fiberglass_planter.dimensions %>)
   </br><strong> Weight:</strong> <%= @fiberglass_planter.weight %></p>
-    <p><strong> Colors:</strong> <%= @fiberglass_planter.colors %></p>
-    <p><strong> Finishes:</strong> <%= @fiberglass_planter.finishes %></p>
-    <p> <%= @fiberglass_planter.description %> </p>
-  </div>
 
-  <span><%= link_to 'Delete', @fiberglass_planter, method: :delete %></span>
+
+    <p><strong>Product Description:</strong> </br> <%= @fiberglass_planter.description.html_safe %> </p>
+</div>
+
+</br>
+<div class="show_products">
+  <p><strong> Colors:</strong> <%= @fiberglass_planter.colors %> </p>
+  <p><strong> Finishes:</strong> <%= @fiberglass_planter.finishes %></p>
+  <%= link_to "View '#{@fiberglass_planter.product_name}' Color/Finish Options", @fiberglass_planter.color_sheet, target: '_blank' %>
+</div>
+
+</br>
+<div class="show_products_bottom">
+  <h4> Additional Product Information: </h4>
+  <p><%= @fiberglass_planter.additional_info.html_safe %></p>
+  <%= link_to "View '#{@fiberglass_planter.product_name}' Spec Sheet", @fiberglass_planter.spec, target: '_blank' %>
+
 
   <div class="edit_form">
     <%= render "form" %>
   </div>
 
+  <span><%= link_to 'Delete', @fiberglass_planter, method: :delete %></span>
 </div>

@@ -1,0 +1,25 @@
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li class="disabled">New Products</li>
+  </ul>
+</nav>
+
+<div class="hero-section-new-products">
+</div>
+
+<div class="cat_description">
+  <h1> New Products </h1>
+
+  <p> Check out our latest and customer favorites below. We have set aside a page dedicated to our newest products and most popular planters. Contact us at 1-888-449-0542 with any questions you have. Thank you!</p>
+</div>
+
+
+<div class="cat_products">
+
+      <% @new_products.each do |new_product| %>
+        <div class="medium-12 large-4 columns"><%= link_to new_product.product_name, new_product %>
+        <p><a href=" <%= "/new_products/#{new_product.id}" %>"><img class="image-tile" src="<%= new_product.image %>" alt=" <%= new_product.product_name %>"></a></p></div>
+        <% end %>
+
+</div>

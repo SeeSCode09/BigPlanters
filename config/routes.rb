@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :plastic_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
   resources :metal_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
   resources :self_watering_planters, only: [:index, :new, :show, :create, :update, :destroy, :edit]
+  resources :new_products, only: [:index, :new, :show, :create, :update, :destroy, :edit]
 
 
   resources :product_groups, only: [:index, :show]

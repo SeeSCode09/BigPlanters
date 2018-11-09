@@ -1,23 +1,53 @@
 <h1> Edit Concrete Planters </h1>
 
-<div class="show_products">
-  <h1><%= @concrete_planter.product_name %></h1>
+<div class="show_products_title">
+<h2><%= @concrete_planter.product_name %></h2>
 
-  <p><img src="<%= @concrete_planter.image %>"><p>
+  <div class="hide-for-medium-down">
+    <span class="previous">
+      <%= link_to("< Previous Planter", @concrete_planter.previous) %>
+    </span>
 
-  <div class="show_text">
-    <p><strong> Model:</strong> <%= @concrete_planter.model %>
-    </br><strong> Dimensions:</strong> (<%= @concrete_planter.dimensions %>)
-  </br><strong> Weight:</strong> <%= @concrete_planter.weight %></p>
-    <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
-    <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
-    <p> <%= @concrete_planter.description %> </p>
+    <span class="categorylink">
+      <%= link_to("All Concrete Planters", concrete_planters_path)%>
+    </span>
+
+    <span class="next">
+      <%= link_to("Next Planter >", @concrete_planter.next) %>
+    </span>
   </div>
 
-  <span><%= link_to 'Delete', @concrete_planter, method: :delete %></span>
+</div>
+
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @concrete_planter.image %>" align="left" alt="<%= @concrete_planter.product_name %>">
+
+    <h5> Prices starting at: <%= @concrete_planter.price %> </h5>
+    <p><strong> Model:</strong> <%= @concrete_planter.model %>
+    </br><strong> Dimensions:</strong> (<%= @concrete_planter.dimensions %>)
+    </br><strong> Weight:</strong> <%= @concrete_planter.weight %></p>
+
+
+    <p><strong>Product Description:</strong> </br> <%= @concrete_planter.description.html_safe %> </p>
+</div>
+
+</br>
+<div class="show_products">
+  <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
+  <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
+  <%= link_to "View '#{@concrete_planter.product_name}' Color/Finish Options", @concrete_planter.color_sheet, target: '_blank' %>
+</div>
+
+</br>
+<div class="show_products_bottom">
+  <h4> Additional Product Information: </h4>
+  <p><%= @concrete_planter.additional_info.html_safe %></p>
+  <%= link_to "View '#{@concrete_planter.product_name}' Spec Sheet", @concrete_planter.spec, target: '_blank' %>
 
   <div class="edit_form">
   <%= render "form" %>
   </div>
 
+  <span><%= link_to 'Delete', @concrete_planter, method: :delete %></span>
 </div>
