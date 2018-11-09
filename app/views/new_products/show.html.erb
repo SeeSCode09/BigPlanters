@@ -1,0 +1,53 @@
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/new_products">New Products</a></li>
+    <li class="disabled"><%= @new_product.product_name %></li>
+  </ul>
+</nav>
+
+<div class="show_products_title">
+<h2><%= @new_product.product_name %></h2>
+
+  <div class="hide-for-medium-down">
+    <span class="previous">
+      <%= link_to("< Previous Planter", @new_product.previous) %>
+    </span>
+
+    <span class="categorylink">
+      <%= link_to("All Metal Planters", new_products_path)%>
+    </span>
+
+    <span class="next">
+      <%= link_to("Next Planter >", @new_product.next) %>
+    </span>
+  </div>
+
+</div>
+
+<div class="show_products_main">
+</br>
+    <img class="productimage"src="<%= @new_product.image %>" align="left" alt="<%= @new_product.product_name %>">
+
+    <h5> Prices starting at: <%= @new_product.price %> </h5>
+    <p><strong> Model:</strong> <%= @new_product.model %>
+    </br><strong> Dimensions:</strong> (<%= @new_product.dimensions %>)
+  </br><strong> Weight:</strong> <%= @new_product.weight %></p>
+
+
+    <p><strong>Product Description:</strong> </br> <%= @new_product.description.html_safe %> </p>
+</div>
+
+</br>
+<div class="show_products">
+  <p><strong> Colors:</strong> <%= @new_product.colors %> </p>
+  <p><strong> Finishes:</strong> <%= @new_product.finishes %></p>
+  <%= link_to "View '#{@new_product.product_name}' Color/Finish Options", @new_product.color_sheet, target: '_blank' %>
+</div>
+
+</br>
+<div class="show_products_bottom">
+  <h4> Additional Product Information: </h4>
+  <p><%= @new_product.additional_info.html_safe %></p>
+  <%= link_to "View '#{@new_product.product_name}' Spec Sheet", @new_product.spec, target: '_blank' %>
+</div>
