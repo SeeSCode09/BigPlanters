@@ -51,3 +51,34 @@
   <p><%= @metal_planter.additional_info.html_safe %></p>
   <%= link_to "View '#{@metal_planter.product_name}' Spec Sheet", @metal_planter.spec, target: '_blank' %>
 </div>
+
+  <div class="hide-for-medium-down">
+    <div class="show_products_related">
+    <h2><%= "Related Fiberglass Planters" %></h2>
+
+      <div class="row_related">
+        <div class="column_related">
+          <% if @metal_planter.previous.present? %>
+          <%= @metal_planter.previous.product_name %>
+          <img class="relatedproductimage" src="<%= @metal_planter.previous.image %>">
+          <br><%= link_to("< View Previous Planter", @metal_planter.previous) %>
+          <% end %>
+        </div>
+
+        <div class="column_related">
+          <%= @metal_planter.product_name %>
+          <img class="relatedproductimage" src="<%= @metal_planter.image %>">
+          <br><%= link_to("View All Metal Planters", metal_planters_path)%>
+        </div>
+
+        <div class="column_related">
+          <% if @metal_planter.next.present? %>
+          <%= @metal_planter.next.product_name %>
+          <img class="relatedproductimage" src="<%= @metal_planter.next.image %>">
+          <br><%= link_to("View Next Planter >", @metal_planter.next) %>
+          <% end  %>
+        </div>
+      </div>
+
+    </div>
+  </div>

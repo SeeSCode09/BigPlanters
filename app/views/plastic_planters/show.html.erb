@@ -50,3 +50,34 @@
   <p><%= @plastic_planter.additional_info.html_safe %></p>
   <%= link_to "View '#{@plastic_planter.product_name}' Spec Sheet", @plastic_planter.spec, target: '_blank' %>
 </div>
+
+  <div class="hide-for-medium-down">
+    <div class="show_products_related">
+    <h2><%= "Related Fiberglass Planters" %></h2>
+
+      <div class="row_related">
+        <div class="column_related">
+          <% if @plastic_planter.previous.present? %>
+          <%= @plastic_planter.previous.product_name %>
+          <img class="relatedproductimage" src="<%= @plastic_planter.previous.image %>">
+          <br><%= link_to("< View Previous Planter", @plastic_planter.previous) %>
+          <% end %>
+        </div>
+
+        <div class="column_related">
+          <%= @plastic_planter.product_name %>
+          <img class="relatedproductimage" src="<%= @plastic_planter.image %>">
+          <br><%= link_to("View All Plastic Planters", plastic_planters_path)%>
+        </div>
+
+        <div class="column_related">
+          <% if @plastic_planter.next.present? %>
+          <%= @plastic_planter.next.product_name %>
+          <img class="relatedproductimage" src="<%= @plastic_planter.next.image %>">
+          <br><%= link_to("View Next Planter >", @plastic_planter.next) %>
+          <% end  %>
+        </div>
+      </div>
+
+    </div>
+  </div>
