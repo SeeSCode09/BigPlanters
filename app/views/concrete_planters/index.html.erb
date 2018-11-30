@@ -20,7 +20,8 @@
 <div class="cat_products">
 
       <% @concrete_planters.each do |concrete_planter| %>
-        <div class="medium-12 large-4 columns"><%= link_to concrete_planter.product_name, concrete_planter %>
+        <div class="medium-12 large-4 columns">
+        <%= link_to concrete_planter.product_name, concrete_planter %>
         <p><a href=" <%= "/concrete_planters/#{concrete_planter.id}" %>"><img class="image-tile" src="<%= concrete_planter.image %>" alt=" <%= concrete_planter.product_name %>"></a></p></div>
         <% end %>
 
