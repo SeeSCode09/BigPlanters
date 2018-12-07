@@ -1,3 +1,7 @@
+<br>
+<div class="hero-section-plastic">
+</div>
+
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="/">Home</a></li>
@@ -5,8 +9,6 @@
   </ul>
 </nav>
 
-  <div class="hero-section-plastic">
-  </div>
 
 <div class="cat_description">
   <h1> Self Watering Planters </h1>
@@ -15,7 +17,7 @@
 </div>
 
 <div class="cat_products">
-  
+
       <% @self_watering_planters.each do |self_watering_planter| %>
         <div class="medium-12 large-4 columns"><%= link_to self_watering_planter.product_name, self_watering_planter %>
           <p><a href=" <%= "/self_watering_planters/#{self_watering_planter.id}" %>"><img class="image-title" src="<%= self_watering_planter.image %>" alt=" <%= self_watering_planter.product_name %>"></a></p></div>
