@@ -15,7 +15,7 @@
       <nav class="top-bar">
           <ul class="title-area">
             <li class="name">
-              <h1><a href="/">Our Planters. Beautify Your Space - Call Us Today! 1-800-262-3296</a></h1>
+              <h1><a href="/">Our Planters. Beautify Your Space.</a></h1>
             </li>
           </ul>
 
@@ -34,22 +34,33 @@
                 <li><%= link_to 'Sign In', new_user_session_path %></li>
               <%- end -%>
             </ul>
+            <div style="overflow: hidden;">
+              <div class="header-row-1">
+                <a href="/product_groups">Home</a> |
+                <a href="/service_areas">Service Areas</a> |
+                <a href="/customers/new">Contact Us</a> |
+                <a href="/about_us">About Us</a>
+              </div>
+            </div>
           </section>
         </div>
       </nav>
 
-        <div style="overflow: hidden;">
+
+      <div style="overflow: hidden;">
         <div class="header-row">
-          <a href="/product_groups">Home</a> |
-          <a href="/service_areas">Service Areas</a> |
-          <a href="/customers/new">Contact Us</a> |
-          <a href="/about_us">About Us</a>
+          <a href="/concrete_planters">Concrete</a> |
+          <a href="/fiberglass_planters">Fiberglass</a> |
+          <a href="/plastic_planters">Plastic</a> |
+          <a href="/metal_planters">Metal</a> |
+          <a href="/self_watering_planters">Self-Watering</a> |
+          <a href="/new_products">New Products</a>
         </div>
       </div>
 
     </div>
 
-      <div class="hide-for-medium-down">
+      <!-- <div class="hide-for-medium-down">
         <div class="side_nav">
           <div class="small-2 columns">
             <a class="button small expanded" href="/concrete_planters">Concrete</a>
@@ -60,7 +71,7 @@
             <a class="button small expanded" href="/new_products">New Products</a>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
       <%- flash.each do |key, value| -%>
@@ -72,7 +83,7 @@
 
       <div class="content-wrapper">
       <%= yield %>
-      <div>
+      </div>
 
 
       <%= javascript_include_tag 'application' %>
