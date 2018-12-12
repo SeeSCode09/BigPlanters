@@ -19,8 +19,8 @@
             </li>
           </ul>
 
-        <div class="hide-for-medium-down">
-          <section class="top-bar-section">
+        <section class="top-bar-section">
+          <div class="hide-for-medium-down">
             <ul class="right">
               <% if user_signed_in? %>
                   <li>
@@ -34,6 +34,7 @@
                 <li><%= link_to 'Sign In', new_user_session_path %></li>
               <%- end -%>
             </ul>
+          </div>
             <div style="overflow: hidden;">
               <div class="header-row-1">
                 <a href="/product_groups">Home</a> |
@@ -43,7 +44,6 @@
               </div>
             </div>
           </section>
-        </div>
       </nav>
 
 

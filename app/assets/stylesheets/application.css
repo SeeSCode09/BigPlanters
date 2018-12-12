@@ -328,6 +328,14 @@
   padding-top: 12px;
 }
 
+.header-row a:hover {
+  text-decoration: underline;
+}
+
+.header-row-1 a:hover {
+  text-decoration: underline;
+}
+
 .header-row-1 {
   background-color: #095EAB;
   height: 30px;
@@ -340,6 +348,7 @@
   padding-left: 5px;
   padding-right: 5px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .header-row-1 a {
