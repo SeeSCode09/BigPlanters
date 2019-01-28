@@ -40,18 +40,18 @@
 </div>
 
 </br>
-<div class="show_products">
-  <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
-  <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
-  <%= link_to "View '#{@concrete_planter.product_name}' Color/Finish Options", @concrete_planter.color_sheet, target: '_blank' %>
-</div>
-
-</br>
 <div class="show_products_bottom">
   <h4> Additional Product Information: </h4>
   <p><%= @concrete_planter.additional_info.html_safe %></p>
   <%= link_to "View '#{@concrete_planter.product_name}' Spec Sheet", @concrete_planter.spec, target: '_blank' %>
 </div>
+
+<div class="show_products">
+  <p><strong> Colors:</strong> <%= @concrete_planter.colors %></p>
+  <p><strong> Finishes:</strong> <%= @concrete_planter.finishes %></p>
+  <%= link_to "View '#{@concrete_planter.product_name}' Color/Finish Options", @concrete_planter.color_sheet, target: '_blank' %>
+</div>
+</br>
 
   <div class="hide-for-medium-down">
     <div class="show_products_related">
